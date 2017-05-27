@@ -1,0 +1,23 @@
+.cell-clickable {
+  height: 30px;
+  margin: auto;
+  vertical-align: middle;
+  &.mine {
+    background-color: red;
+  }
+  &.flag {
+    background-color: blue;
+  }
+  &.question {
+    background-color: yellow;
+  }
+  &.adjacent-low {
+    color: green;
+  }
+  &.adjacent-mid {
+    color: yellow;
+  }
+  &.adjacent-high {
+    color: red;
+  }
+}

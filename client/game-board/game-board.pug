@@ -1,0 +1,5 @@
+.row(ng-repeat="row in Board.rowArr")
+  board-cell.cell(ng-repeat="col in Board.colArr",
+    state="Board.cells.flags[Board.getCoordinate(row, col)]"
+    on-click="Board.clickHandler(type, row, col)",
+    primary="{{::Board.PRIMARY}}")

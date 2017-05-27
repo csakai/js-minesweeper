@@ -1,0 +1,25 @@
+{
+  "name": "JS-Minesweeper",
+  "version": "0.0.0",
+  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
+  "main": "server.js",
+  "repository": "",
+  "author": "Chris Sakai <cs.chris.sakai@gmail.com>",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "express": "~3.2.4",
+    "glob": "^7.1.2",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
+    "ng-templatecache": "^0.1.4",
+    "node-sass": "^4.5.3",
+    "pug": "^2.0.0-rc.1"
+  },
+  "scripts": {
+    "postinstall": "build",
+    "build-templates": "node ./scripts/pug-to-templatecache.js",
+    "build-css": "node-sass --include-path client client/main.scss client/main.css",
+    "build": "npm run build-templates; npm run build-css",
+    "start": "node ./server.js"
+  }
+}

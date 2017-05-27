@@ -1,0 +1,29 @@
+.row {
+  height: 32px;
+  width: 960px;
+  background-color: black; }
+
+.cell {
+  display: block;
+  float: left;
+  background-color: lightgrey;
+  height: 30px;
+  width: 30px;
+  border: black 1px solid; }
+
+.cell-clickable {
+  height: 30px;
+  margin: auto;
+  vertical-align: middle; }
+  .cell-clickable.mine {
+    background-color: red; }
+  .cell-clickable.flag {
+    background-color: blue; }
+  .cell-clickable.question {
+    background-color: yellow; }
+  .cell-clickable.adjacent-low {
+    color: green; }
+  .cell-clickable.adjacent-mid {
+    color: yellow; }
+  .cell-clickable.adjacent-high {
+    color: red; }

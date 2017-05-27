@@ -1,0 +1,15 @@
+.row {
+  height: 32px;
+  width: 960px;
+  background-color: black;
+}
+
+.cell {
+  display: block;
+  float: left;
+  background-color: lightgrey; 
+  height: 30px;
+  width: 30px;
+  border: black 1px solid;
+}
+@import 'board-cell/board-cell';

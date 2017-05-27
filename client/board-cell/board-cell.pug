@@ -1,0 +1,9 @@
+.cell-clickable(oncontextmenu="return false;",
+  ng-mousedown="Cell.clickCell($event)",
+  ng-class="{" +
+    "'mine': Cell.state.mine," +
+    "'flag': Cell.state.flag === 1," +
+    "'question': Cell.state.flag === 2," +
+    "'adjacent-low': Cell.state.adjacent < 3," +
+    "'adjacent-mid': Cell.state.adjacent >= 3 && Cell.state.adjacent < 6," +
+    "'adjacent-high': Cell.state.adjacent >=6 }") {{Cell.state.adjacent}}

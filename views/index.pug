@@ -1,0 +1,13 @@
+html(ng-app="main")
+  head
+    title Minesweeper
+    link(rel="stylesheet", type="text/css", href="src/main.css")
+  body
+    game
+    div: a(href="https://github.com/csakai/js-minesweeper") Git repo
+    
+    each dep in vendor_deps
+      script(type="text/javascript", src='vendor/'+dep)
+
+    each dep in src_deps
+      script(type="text/javascript", src='src/'+dep)
