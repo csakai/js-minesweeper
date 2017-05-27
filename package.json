@@ -16,7 +16,7 @@
     "pug": "^2.0.0-rc.1"
   },
   "scripts": {
-    "postinstall": "build",
+    "postinstall": "npm run build",
     "build-templates": "node ./scripts/pug-to-templatecache.js",
     "build-css": "node-sass --include-path client client/main.scss client/main.css",
     "build": "npm run build-templates; npm run build-css",
